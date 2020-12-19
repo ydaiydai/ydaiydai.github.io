@@ -2676,6 +2676,14 @@ input, select, textarea {
 			transform: scale(1.05);
 		}
 
+	a.image.right{
+		width:400px; height:400px; max-width:100%; height: auto;
+	}
+
+	a.image.left{
+		width:400px; height:400px; max-width:100%; height: auto;
+	}
+
 /* Actions */
 
 	ul.actions {
