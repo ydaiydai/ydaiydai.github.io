@@ -2677,11 +2677,11 @@ input, select, textarea {
 		}
 
 	a.image.right{
-		width:400px; height:400px; max-width:100%; height: auto;
+		width:500px; height:500px; max-width:100%; height: auto;
 	}
 
 	a.image.left{
-		width:400px; height:400px; max-width:100%; height: auto;
+		width:500px; height:500px; max-width:100%; height: auto;
 	}
 
 /* Actions */
