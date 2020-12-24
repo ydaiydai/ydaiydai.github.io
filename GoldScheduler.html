@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Swing It</title>
+		<title>Gold Scheduler</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,7 +19,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Swing It</a>
+						<a href="index.html" class="logo">Gold Scheduler</a>
 					</header>
 
 				<!-- Nav -->
@@ -46,68 +46,87 @@
 							<section class="post">
 								<header class="major">
 									
-									<h1>Swing It<br />
+									<h1>Gold Scheduler<br />
 									</h1>
 								</header>
 
 								<p>
-									"Swing It" is a game made in Unity using C#. My friend and I finished this
-									playable game in 36 hours during LA Hacks 2019. We shared a mutual 
-									interest in getting to fully know the ins and outs of Unity. This was 
-									our first hackathon and we wanted to test our programming and 
-									corporation skills. 
+									Gold Scheduler is a webapp made using HTML, Python, JavaScript under the 
+									Flask Framework with Heroku's PostgreSQL. Gold Scheduler is a webapp for 
+									UCSB students to help them plan their fututre quarter schedules. 
 								</p>
 
 								<p>
                                     My teamates and I worked together using the Agile Development 
-										approach. Working on this project gave us a better mindset on teamwork 
-                                        and greatly strengthened our collaboration skills. 
-                                        
-                                        You can click <a href="https://protected-depths-20813.herokuapp.com/">here</a> to go to the website.
-									as we assigned each other to different roles, established different objectives, and had frequent meetups and discussions.
+									approach. Working on this project gave us a better mindset on teamwork 
+									and greatly strengthened our collaboration skills as we assigned each 
+									other to different roles, established different objectives, and had frequent 
+									meetups and discussions. You can click <a href="https://protected-depths-20813.herokuapp.com/">here</a> 
+									to go to the website.
+									
 								</p>
 								<hr />
 
-								<p><span class="image right"><img src="images/level02_swingSq.jpg" alt="" /></span>
-									Taking a week prior to LA Hacks to making a rough plan and learn by 
-									ourselves Unity and C# concepts was definitely beneficial for us to 
-									make this project work in less than two days. Though building a 3D 
-									action game with a fully customized swing physics system was a 
-									challenging task, this project was a great learning experience into 
-									figuring out how Unity engine can be well utilized to be build a fun 
-									3D game. Under the time constraint, My teammate and I also learned to 
-									use existing sources and concepts. 
+								<style>
+									span.image.right{
+										width:600px; height:600px; max-width:100%; height: auto;
+									}
+								</style>
+
+								<p><span class="image right"><img src="images/GoldFront.jpg" alt="" /></span>
+									Gold Scheduler is a project which I got to experience first hand a thorough 
+									development process for a webapp from the backend such as database to the frontend 
+									such as user experience, while using the formal Agile software development
+									methodologies. 
 									<br>
-									<br>	
-									The entire code-base with its assets can be found on <a href="https://github.com/ydaiydai/Swing-It-">Github</a>. You can 
-									also get a copy of the windows executables <a href="https://github.com/ydaiydai/Swing-It-Executable">here</a>
+									<br>
+									I was the UX coordinator of the team who focused on the general design and frontend
+									framework. I worked closely with our team's backend developers and I was the Agile 
+									retrospective leader hosting a team meeting to reflect on and organize the project
+									development.
+									<br>
+									<br>
+									The entire code-base with its assets can be found on 
+									<a href="https://github.com/ucsb-cs48-w19/4pm-gold-scheduler">Github</a>. 
 									<br>
 									<br>
 								</p>
 
-								<h2 style="text-align:left">Features</h2>
+								<h2 style="text-align:left">Web Features</h2>
 
-								<p>The game is based around manipulating the rigidbody in a 3D setting.
-									In addition, the game utilized Unity's Post Processing Stack. The 
-									key features of the game are listed below:
+								<p> 
+									Key features of the webapp are listed below:
 								</p>
 
 											<ul>
-												<li>Three unique playable levels with different objectives.</li>
-												<li>Fully customized swing physics and rope mehcanics.</li>
-												<li>Atmospheric lighting and environment.</li>
-												<li>Post processed graphics.</li>
-												<li>Full collider detection for level progress (failure or 
-													completion) and respawn in each level.</li>
-												<li>Funtional startup menu with level selection and graphical
-													options.</li>
+												<li>Simple User Interface that is easy to understand.</li>
+												<li>Gold Scheduler uses weekly calenders for the user's course planning. The student can 
+													select a subject from the top dropdown list, the relative information will be shown 
+													in the following fields so specific "Class", "Lecture", and "Section" can be selected.
+												</li>
+												<li>Ability to add and drop selected class.
+
+												</li>
+												<li>
+													Added course is be shown on the weekly calender with its relative information marked
+													on the corresponding time slot.
+												</li>
+												<li>
+													Different courses are shown with different colors for the user to distinguish.
+												</li>
+												<li>The user can add new plans for multiple potential course schedules. A new empty
+													calender will be initialized and the user is free to go to or delete any plan created.
+												</li>
+												<li>Easy access to UCSB and Rate My Professor website.</li>
+												<li>Detection and notice when two courses have time conflicts.</li>
 											</ul>
+								<!--
+								<p> 
+									Key features of the webapp are listed below:
+								</p>
+								-->
 								
-											<iframe width="950" height="500" style = "display: block; margin: 0 auto;"
-											src="https://www.youtube.com/embed/Ew35SfNcYN4">
-											</iframe>
-								
-								<!--<div class="image main"><img src="images/pic01.jpg" alt="" /></div>-->
+								<div class="image main"><img src="images/GoldSchedule.jpg" alt="" /></div>
 								
 							</section>
 
