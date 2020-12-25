@@ -2692,6 +2692,12 @@ input, select, textarea {
 		width:500px; height:500px; max-width:100%; height: auto;
 	}
 
+	figcaption {	
+		font-style: italic;
+		padding: 2px;
+		text-align: center;
+	  }
+
 /* Actions */
 
 	ul.actions {
