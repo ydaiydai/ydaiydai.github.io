@@ -2688,19 +2688,19 @@ input, select, textarea {
 		}
 
 	a.image.right{
-		width:28vw; height:500px; max-width:100%; height: auto;
+		width:30vw; height:500px; max-width:100%; height: auto;
 	}
 
 	a.image.left{
-		width:28vw; height:500px; max-width:100%; height: auto;
+		width:30vw; height:500px; max-width:100%; height: auto;
 	}
 
 	span.image.right{
-		width:28vw; height:500px; max-width:100%; height: auto;
+		width:30vw; height:500px; max-width:100%; height: auto;
 	}
 
 	span.image.left{
-		width:28vw; height:500px; max-width:100%; height: auto;
+		width:30vw; height:500px; max-width:100%; height: auto;
 	}
 
 	figcaption {	
