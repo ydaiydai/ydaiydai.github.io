@@ -2,107 +2,318 @@
 
 <html>
 	<head>
-		<title>C++ Programming Showcase</title>
+		<title>Game Engine Development</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		<!-- Header -->
+			<div id="header">
 
-				<!-- Header -->
-					<header id="header">
-						<a href="../index.html" class="logo">C++</a>
-					</header>
+				<div class="top">
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-							<li><a href="../critiques/articles.html">Critiques</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://github.com/ydaiydai" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<!-- Logo -->
+						<div id="logo">
+							
+							<h1 id="title">Yi Dai</h1>
+							<p>Game Designer & Engineer</p>
+						</div>
+
+                        <ul class="icons">
+							<li><a href="https://github.com/ydaiydai" class="icon brands fa-github"><span class="label">Github</span></a></li>
 							<li><a href="https://www.linkedin.com/in/yi-d-49a125177/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:yidai@usc.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
-					</nav>
 
-				<!-- Main -->
-					<div id="main">
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="../index.html#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+								<li><a class="active" href="../index.html#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
+							</ul>
+						</nav>
 
-						<!-- Featured Post -->
-							<!--<article class="post featured">-->
-								<header class="major" style="padding-bottom: 2rem;">
-									
-									<h2 style="font-size: 50pt;">C++ works<br />
-									</h2>
-									
-								</header>								
-							<!--</article>-->
+				</div>
 
-	
-							<!-- Featured Post -->
-							<article class="post featured">
+				<div class="bottom">
 
-								<h2 style="text-align:left"><a href="https://github.com/ydaiydai/Filtering">Filtering</h2></a>
+					<!-- Social Icons -->
+						
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+
+				<!-- About Me -->
+                <section id="1" class="three">
+                    <div class="container">
+
+                        <header>
+                            <h2 style="text-align: center;">Game Engine Development</h2>
+                        </header>
+
+                        
+                            <img src="../images/Game_Engine/GE_TopScreeshot.png" alt="" style="width: 100%;
+                            max-width: 750px; height: auto; object-fit: cover; display: block; margin-left: auto; margin-right: auto;"/>
+
+                        
+                                <h2 style="font-size: 1.4em;">Details</h2>
+                                <ul>
+                                    <li>Developed on Prime Engine, a skeleton game engine made by Professor Artjoms 
+                                        Kovalovs at USC.
+                                    </li>
+                                    <li>Experimented with the code base and implemented different features for 
+                                        my personal improvement.</li>
+                                    
+                                </ul>
+
+                            
+                            
+                            
+                                <h2 style="font-size: 1.4em;">Takeaways</h2>
+                                <p>
+                                    Working in this Game Engine was my first time learning the “lower levels” of Game 
+                                    Development. I was thrown into a huge code base that I was unfamiliar with. It 
+                                    became a great playground for me to be bold, try new things, and gain knowledge 
+                                    either expectedly or unexpectedly. It could be frustrating sometimes as I tried 
+                                    to figure out how things work. But being able to understand any code base quickly 
+                                    is one of the most important skills a game engineer has to have. 
+                                </p>
+
+                                <p>
+                                    I got the opportunity to implement fundamental game features such as camera 
+                                    culling and collision detection that we usually take for granted. Playing with 
+                                    the code base and working on those features helped de-mystify game development. 
+                                    Not only I learned to become a better engineer, but it also helped me become a 
+                                    better designer as well as I now know more about game development in general.
+
+                                </p>
+
+                    </div>
+                </section>
+
+
+                <section id="2" class="three">
+                    <div class="container">
+    
+                        <h2>Features Implemented</h2>
+                            
+                        <p>All were implemented from scratch.</p>
+
+                        <ul>
+                            <li>AABBox-based camera frustum culling</li>
+
+                            <iframe width="950" height="500" style = "display: block; margin: 0 auto; padding-bottom: 2vw;"
+                                        src="https://www.youtube.com/embed/_xXR1Fa1HTA">
+                                        </iframe>
+
+                            <li>Collision detection with gravity</li>
+
+                            <iframe width="950" height="500" style = "display: block; margin: 0 auto; padding-bottom: 2vw;"
+                                        src="https://www.youtube.com/embed/o6IvElSJiTs">
+                                        </iframe>
+
+                            <li>Tank Mini-game
+                                <ul>
+                                    <li>I built upon the physics system previously implemented for collision 
+                                        detection to also include trigger volumes. To make the task more 
+                                        meaningful, I developed a tank mini-game in-engine.</li>
+
+                                    <li>In my first iteration, it was a mini-game where you control a tank 
+                                        and eliminate all soldiers by driving over them. The game is won 
+                                        when you eliminate all soldiers in the scene.</li>
+
+                                    <li>I added the controllable client tank and implemented trigger 
+                                        volumes on moving soldiers which destroy them (make them disappear) 
+                                        when the tank hits them. I first made the client tank work with 
+                                        physics by adding a physics component to it and expanding 
+                                        functionalities in the physics manager. I also added the 
+                                        debugRenderer method which draws sphere colliders on tanks and 
+                                        soldiers for better visualization.</li>
+                                    
+                                    <li>I extended functions in objects and added trigger volume on soldiers. 
+                                        Currently, the soldier removes themselves from the scene when their 
+                                        trigger volume is entered by the tank.</li>
+
+                                        <iframe width="950" height="500" style = "display: block; margin: 0 auto; padding-bottom: 2vw;"
+                                        src="https://www.youtube.com/embed/ueghCrSH4H4">
+                                        </iframe>
+
+                                    <li>For my second iteration, I improved and expanded the game which had 
+                                        its trigger volumes cause a more variety of things, and made the 
+                                        game more complex.</li>
+
+                                    <li>I updated the code in soldier’s state machines. Instead of 
+                                        disappearing upon elimination, Soldiers would play their DEATH 
+                                        animation instead.</li>
+
+                                        <iframe width="950" height="500" style = "display: block; margin: 0 auto; padding-bottom: 2vw;"
+                                        src="https://www.youtube.com/embed/y5CvrWVmfMI">
+                                        </iframe>
+
+                                    <li>In addition, I added another layer of trigger volume onto the tank. 
+                                        It is bigger compared to the one already on the tank. In videos, 
+                                        the bigger sphere collider drawn by the debugRenderer is this bigger 
+                                        layer of tank trigger volume for visualization. In the level, all 
+                                        soldiers will start by walking around. They will start running once 
+                                        they are near the tank which triggers the bigger volume. Soldiers 
+                                        are now programmed in a way that they can start running at any moment 
+                                        during their movement.</li>
+
+                                        <iframe width="950" height="500" style = "display: block; margin: 0 auto; padding-bottom: 2vw;"
+                                        src="https://www.youtube.com/embed/UMQhxcz1qd8">
+                                        </iframe>
+
+                                    <li>To make the game more challenging and have losing conditions, I 
+                                        modified the goal of the mini-game from just eliminating all soldiers 
+                                        on sight to eliminating only the imposters among them. Whenever the 
+                                        game level is loaded, soldiers are randomly assigned to be either 
+                                        “real” or “imposter.” The player won’t be able to know who or how many 
+                                        are imposters. The tank must avoid running over any real soldiers. 
+                                        The game is lost if a real soldier was accidentally run over.</li>
+
+                                    <li>To be able to distinguish between real soldiers and imposters, I 
+                                        added the ability for the tank to slow down its speed once a real 
+                                        soldier is nearby. It happens if any real soldier hits the bigger 
+                                        trigger volume on the tank. The tank detects it and updates its 
+                                        speed. It adds a good complexity to the game as sometimes an 
+                                        imposter and a real soldier could both be close to the tank, the 
+                                        tank slows down its speed but the player can’t be sure which one 
+                                        is the real soldier. Some strategy is required to avoid failure. </li>
+
+                                    <li>Lastly, I also added a timer on the screen. The game must be won in 
+                                        under … seconds. It adds another layer of difficulty and makes the 
+                                        game even more engaging. The player won’t be able to move the tank 
+                                        if it hit an imposter or time is run out.</li>
+
+                                </ul>
+                            </li>
+                        </ul>
+
+    
+                            <div class="row">
+                                <div class="column" style="width: 50%;">
+                                    <iframe width="650" height="500" style = " margin: 0 auto; padding-bottom: 2vw;"
+                                        src="https://www.youtube.com/embed/bsT93kZGov8">
+                                        </iframe>
+                                </div>
+                                <div class="column" style="width: 50%;">
+                                    <iframe width="650" height="500" style = " margin: 0 auto; padding-bottom: 2vw;"
+                                        src="https://www.youtube.com/embed/u69e0JKqpG8">
+                                        </iframe>
+                                </div>
+                            </div>
+                    
+                    </div>
+                </section>
+
+				
+				<!-- Portfolio -->
+                <section id="portfolio" class="two">
+                    <div class="container">
+
+                        <header>
+                            <h2>Portfolio</h2>
+                        </header>
+
+                        <p></p>
+
+                        <div class="row">
+                            <div class="col-4 col-12-mobile">
+                                <article class="item">
+                                    <!-- Both png and jpg format work -->
+                                    <a href="eye4eye.html" class="image fit"><img src="../images/Eye4Eye/Eye Design_1-export.jpg" alt="" style="width: 100%;  max-height: 400px; max-width: 500px; height: auto; object-fit: cover;"/></a>
+                                    <header>
+                                        <h3>Eye 4 Eye</h3>
+                                    </header>
+                                </article>
                                 
-                                <style>
-									a.image.right{
-										width:32vw; height:600px; max-width:100%; height: auto;
-									}
-								</style>
+                                <article class="item">
+                                    <a href="HedgeHug.html" class="image fit"><img src="../images/Projects/Spike_Away_Concept-export.png" alt="" style="width: 100%;  max-height: 400px; max-width: 500px; height: auto;object-fit: cover;"/></a>
+                                    <header>
+                                        <h3>Hedge Hug</h3>
+                                    </header>
+                                </article>
 
-									<p style="line-height: 1.6; margin-bottom: 10em; font-size: 22px;"><a href="https://github.com/ydaiydai/Filtering" span class="image right"><img src="../images/Filtering/s1G_B_J.png" alt="" /></a></span>
-                                        This is my implementation of Gaussian, Bilateral, and Joing 
-                                        Bilateral Filtering written in C++. 
-										<br>
-										<br>
-										You can find the source codes <a href="https://github.com/ydaiydai/Filtering" style = "color: darkgreen; font-size: 1.5rem;">here</a>.
-									</p>
+                                
+
+                            </div>
+
+                            <div class="col-4 col-12-mobile">
+                                <article class="item">
+                                    <a href="Kach.html" class="image fit"><img src="../images/Kach/KachThumbnail.png" alt="" style="width: 100%;  max-height: 400px; max-width: 500px; height: auto;object-fit: cover;"/></a>
+                                    <header>
+                                        <h3>Kach</h3>
+                                    </header>
+                                </article>
+
+                                <article class="item">
+                                    <a href="Beakon.html" class="image fit"><img src="../images/Projects/maincharacterjump-export.gif" alt="" style="width: 100%;  max-height: 400px; max-width: 500px; height: auto;object-fit: cover;"/></a>
+                                    <header>
+                                        <h3>Beakon</h3>
+                                    </header>
+                                </article>
+                                
+                            </div>
+
+                            <div class="col-4 col-12-mobile">
+                                <article class="item">
+                                    <a href="Cppworks.html" class="image fit"><img src="../images/Filtering/s1G_B_J-thumb.png" alt="" style="width: 100%;  max-height: 400px; max-width: 500px; height: auto;object-fit: cover;"/></a>
+                                    <header>
+                                        <h3>Game Engine Development (C++)</h3>
+                                    </header>
+                                </article>
+
+                                <article class="item">
+                                    <a href="boardgames.html" class="image fit"><img src="../images/Prototypes/Board Week 1-thumb.png" alt="" style="width: 100%;  max-height: 400px; max-width: 500px; height: auto;object-fit: cover;"/></a>
+                                    <header>
+                                        <h3>Board Game</h3>
+                                    </header>
+                                </article>
+                            </div>
 
 
-                                <h2 style="text-align:left"><a href="https://github.com/ydaiydai/Splay-Tree">Splay Tree</h2></a>
-								
-									<p style="line-height: 1.6; margin-bottom: 10em; font-size: 22px;"><a href="https://github.com/ydaiydai/Splay-Tree" span class="image right" style = "width:600px; height:600px; max-width:100%; height: auto;" ><img src="../images/Splay_Tree/SplayTree.png" alt="" /></a></span>
-                                        This is my implementation of Splay Tree in C++. 
-										<br>
-										<br>
-										You can find the source codes <a href="https://github.com/ydaiydai/Splay-Tree" style = "color: darkgreen; font-size: 1.5rem;">here</a>.
-									</p>		
+                            <div class="col-4 col-12-mobile">
+                                <article class="item">
+                                    <a href="historyPaper.html" class="image fit"><img src="../images/HistoryPaper-thumb.png" alt="" style="width: 100%;  max-height: 400px; max-width: 500px; height: auto;object-fit: cover;"/></a>
+                                    <header>
+                                        <h3>History Research Paper</h3>
+                                    </header>
+                                </article>
+                            </div>
+                            
 
-									<p>
-										<br>
-									</p>
-	
-									<ul class="actions special">
-										<li><a href="#" class="button large">Back to the top</a></li>
-									</ul>
-									
-							</article>
+                        </div>
 
-					</div>
+                    </div>
+                </section>
 
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
 
 				<!-- Copyright -->
-				
-					<div id="copyright">
-						<ul><li>&copy; Yi Dai</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
-				
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
 			</div>
 
 		<!-- Scripts -->
-			<script src="../assets/js/jquery.min.js"></script>
-			<script src="../assets/js/jquery.scrollex.min.js"></script>
-			<script src="../assets/js/jquery.scrolly.min.js"></script>
-			<script src="../assets/js/browser.min.js"></script>
-			<script src="../assets/js/breakpoints.min.js"></script>
-			<script src="../assets/js/util.js"></script>
-			<script src="../assets/js/main.js"></script>
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/jquery.scrollex.min.js"></script>
+        <script src="../assets/js/jquery.scrolly.min.js"></script>
+        <script src="../assets/js/browser.min.js"></script>
+        <script src="../assets/js/breakpoints.min.js"></script>
+        <script src="../assets/js/util.js"></script>
+        <script src="../assets/js/main.js"></script>
 
 	</body>
 </html>
