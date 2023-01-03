@@ -1,7 +1,7 @@
 # ydaiydai.github.io
-## This is my Personal Website
 
-## Please Check It Out!
+## This is my personal website.
+
+## Please check it out!
 
 Website URL: https://ydaiydai.github.io/
-
